@@ -1,12 +1,27 @@
 import {
-  AppBar,
-  Box,
+  Container,
   List,
   ListItem,
   ListItemButton,
-  Toolbar,
+  Typography,
 } from '@mui/material'
 import { styled } from '@mui/system'
+
+const navBarItems = [
+  { name: 'About', url: '/#about' },
+  { name: 'Work', url: '/#projects' },
+  { name: 'Contact', url: '/#contact' },
+  { name: 'Blog', url: '/#blog' },
+]
+
+const StyledContainer = styled(
+  Container,
+  {},
+)({
+  display: 'flex',
+  justifyContent: 'flex-end',
+  position: 'fixed',
+})
 
 const StyledList = styled(
   List,
@@ -14,35 +29,29 @@ const StyledList = styled(
 )({
   display: 'flex',
   color: 'black',
-  margin: '0px 5px',
 })
 
-const StyledListItem = styled(
-  ListItem,
-  {},
-)({
-  margin: '0px 32px',
-})
+const StyledListItem = styled(ListItem, {})({})
 
 export const Navbar = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: 'white' }}>
-        <Toolbar>
-          <StyledList>
-            <StyledListItem>About</StyledListItem>
-            <StyledListItem>Projects</StyledListItem>
-            <StyledListItem>Contact</StyledListItem>
-            <StyledListItem>Blog</StyledListItem>
-            <ListItemButton
-              variant="outline"
-              sx={{ border: 'solid 2px black', borderRadius: '10px' }}
-            >
-              Resume
-            </ListItemButton>
-          </StyledList>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <StyledContainer maxWidth="100">
+      <StyledList>
+        {navBarItems &&
+          navBarItems.map((item) => {
+            return (
+              <StyledListItem key={item.name}>
+                <Typography variant="body2">{item.name}</Typography>
+              </StyledListItem>
+            )
+          })}
+        <ListItemButton
+          variant="outline"
+          sx={{ border: 'solid 2px black', borderRadius: '10px' }}
+        >
+          <Typography variant="body2">Resume</Typography>
+        </ListItemButton>
+      </StyledList>
+    </StyledContainer>
   )
 }
