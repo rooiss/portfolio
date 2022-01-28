@@ -22,7 +22,7 @@ const CardBox = styled(
 
 export const Projects = () => {
   return (
-    <OuterBox>
+    <OuterBox id="Work">
       <Typography variant="h3" align="left">
         Some things I've built
       </Typography>

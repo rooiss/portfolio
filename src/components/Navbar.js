@@ -6,6 +6,7 @@ import {
   Typography,
 } from '@mui/material'
 import { styled } from '@mui/system'
+import ScrollIntoView from 'react-scroll-into-view'
 
 const navBarItems = [
   { name: 'About', url: '/#about' },
@@ -41,7 +42,11 @@ export const Navbar = () => {
           navBarItems.map((item) => {
             return (
               <StyledListItem key={item.name}>
-                <Typography variant="body2">{item.name}</Typography>
+                <ScrollIntoView selector={`#${item.name}`}>
+                  <ListItemButton>
+                    <Typography variant="body2">{item.name}</Typography>
+                  </ListItemButton>
+                </ScrollIntoView>
               </StyledListItem>
             )
           })}

@@ -8,7 +8,7 @@ const StyledBox = styled(
   display: 'flex',
   alignItems: 'column',
   height: '400px',
-  margin: '32px 0px',
+  margin: '64px 0px',
 })
 
 export const About = () => {
