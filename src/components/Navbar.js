@@ -52,7 +52,11 @@ export const Navbar = () => {
           })}
         <ListItemButton
           variant="outline"
-          sx={{ border: 'solid 2px black', borderRadius: '10px' }}
+          sx={{
+            border: 'solid 2px black',
+            borderRadius: '10px',
+            padding: '0px 10px',
+          }}
         >
           <Typography variant="body2">Resume</Typography>
         </ListItemButton>

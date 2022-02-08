@@ -60,6 +60,28 @@ const TextBox = styled(
   width: '50%',
 })
 
+const StyledButton = styled(
+  Button,
+  {},
+)({
+  // '&:hover' {
+  //   backgroundColor: 'black',
+  //   color: 'white',
+  // },
+})
+
+// const StyledButton = styled.div`
+//   &:hover ${img} {
+//     color: 'white';
+//   }
+// `
+
+// const img = styled.div`
+//   &:hover {
+//     color: 'white';
+//   }
+// `
+
 export const ProjectCard = ({ name, mirrored }) => {
   return (
     <StyledCard elevation={0}>
@@ -80,15 +102,15 @@ export const ProjectCard = ({ name, mirrored }) => {
             React Typescript Express Node NGINX
           </Typography>
           <CardActions>
-            <Button>
+            <StyledButton>
               <img src="/images/GitHub-Mark-32px.png" alt="github icon" />
-            </Button>
-            <Button>
+            </StyledButton>
+            <StyledButton>
               <img
                 src="/images/icons8-external-link-32.png"
                 alt="external link"
               />
-            </Button>
+            </StyledButton>
           </CardActions>
         </RightBox>
       ) : (
@@ -108,15 +130,15 @@ export const ProjectCard = ({ name, mirrored }) => {
             React Typescript Express Node NGINX
           </Typography>
           <CardActions>
-            <Button>
+            <StyledButton>
               <img src="/images/GitHub-Mark-32px.png" alt="github icon" />
-            </Button>
-            <Button>
+            </StyledButton>
+            <StyledButton>
               <img
                 src="/images/icons8-external-link-32.png"
                 alt="external link"
               />
-            </Button>
+            </StyledButton>
           </CardActions>
         </LeftBox>
       )}
