@@ -9,12 +9,13 @@ const StyledBox = styled(
   display: 'flex',
   alignItems: 'column',
   justifyContent: 'flex-start',
-  height: '500px',
-  width: '1000px',
+  height: '55vh',
+  width: '100%',
+  maxWidth: '57%',
   margin: '64px 0px',
   backgroundImage:
-    'linear-gradient(to right, rgba(0,0,0, .46),rgba(67,67,67, 0.20) 26%),url(/images/Korea.jpeg)',
-  backgroundSize: 'cover',
+    'linear-gradient(to right, rgba(0,0,0, .46),rgba(67,67,67, 0.20) 26%),url(/images/vietnamBoat.jpeg)',
+  backgroundSize: 'contain',
   backgroundRepeat: 'no-repeat',
   backgroundAttachment: 'fixed',
   zIndex: -1,
@@ -42,13 +43,12 @@ export const About = () => {
           Hi I'm Louis
         </WhiteTypography>
         <WhiteTypography variant="h4" fontWeight="bold">
-          I beep boop so hard
+          ideas come in, webapps come out
         </WhiteTypography>
         <WhiteTypography variant="h6" fontWeight="bold">
-          you literally have no idea
+          beep booping since 2019
         </WhiteTypography>
       </Box>
-      {/* <Box><Typography variant="h1">huge image</Typography></Box> */}
     </StyledBox>
   )
 }

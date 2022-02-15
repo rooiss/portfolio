@@ -14,6 +14,8 @@ const StyledBox = styled(
   flexDirection: 'column',
   alignItems: 'center',
   height: '100%',
+  // backgroundColor: '#F6F6F6',
+  // zIndex: -2,
 })
 
 export const Main = () => {

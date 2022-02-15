@@ -1,21 +1,21 @@
-import { Box, Container, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import { styled } from '@mui/system'
 
 const StyledBox = styled(
   Box,
   {},
 )({
-  // flexShrink: 0,
+  width: '100%',
+  backgroundColor: '#F2F2F2',
+  padding: '32px 0px',
+  display: 'flex',
+  justifyContent: 'center',
 })
 
 export const Footer = () => {
   return (
-    <footer>
-      <StyledBox>
-        <Container maxWidth="xl">
-          <Typography variant="body2">Designed & Built by Louis Kim</Typography>
-        </Container>
-      </StyledBox>
-    </footer>
+    <StyledBox>
+      <Typography variant="body2">Designed & Built by Louis Kim</Typography>
+    </StyledBox>
   )
 }

@@ -9,7 +9,6 @@ import { styled } from '@mui/system'
 import ScrollIntoView from 'react-scroll-into-view'
 
 const navBarItems = [
-  { name: 'About', url: '/#about' },
   { name: 'Work', url: '/#projects' },
   { name: 'Contact', url: '/#contact' },
   { name: 'Blog', url: '/#blog' },

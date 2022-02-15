@@ -5,7 +5,6 @@ const StyledCard = styled(
   Card,
   {},
 )({
-  width: '800px',
   margin: '16px 16px',
 })
 
@@ -60,27 +59,7 @@ const TextBox = styled(
   width: '50%',
 })
 
-const StyledButton = styled(
-  Button,
-  {},
-)({
-  // '&:hover' {
-  //   backgroundColor: 'black',
-  //   color: 'white',
-  // },
-})
-
-// const StyledButton = styled.div`
-//   &:hover ${img} {
-//     color: 'white';
-//   }
-// `
-
-// const img = styled.div`
-//   &:hover {
-//     color: 'white';
-//   }
-// `
+const StyledButton = styled(Button, {})({})
 
 export const ProjectCard = ({ name, mirrored }) => {
   return (
@@ -92,24 +71,28 @@ export const ProjectCard = ({ name, mirrored }) => {
           </Typography>
           <TextBox>
             <Typography variant="body2" align="right">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-              ranging across all continents except Antarctica
+              A more robust to-do web app that uses the browser's Notification
+              API and local storage, to alert users about the tasks that they
+              have created.
             </Typography>
           </TextBox>
           <StyledLineRight />
           <Typography variant="body2" color="text.secondary">
-            React Typescript Express Node NGINX
+            React ContextAPI Typescript NGINX Mui
           </Typography>
           <CardActions>
             <StyledButton>
-              <img src="/images/GitHub-Mark-32px.png" alt="github icon" />
+              <a href="https://github.com/rooiss/notified">
+                <img src="/images/GitHub-Mark-32px.png" alt="github icon" />
+              </a>
             </StyledButton>
             <StyledButton>
-              <img
-                src="/images/icons8-external-link-32.png"
-                alt="external link"
-              />
+              <a href="https://www.notified.gq">
+                <img
+                  src="/images/icons8-external-link-32.png"
+                  alt="external link"
+                />
+              </a>
             </StyledButton>
           </CardActions>
         </RightBox>
@@ -120,25 +103,26 @@ export const ProjectCard = ({ name, mirrored }) => {
           </Typography>
           <TextBox>
             <Typography variant="body2">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-              ranging across all continents except Antarctica
+              This web app allows a user to find a stock ticker using the Tiingo
+              API and take notes in a markdown format.
             </Typography>
           </TextBox>
           <StyledLine />
           <Typography variant="body2" color="text.secondary">
-            React Typescript Express Node NGINX
+            React Jest Typescript Express Node NGINX Docker CircleCI
           </Typography>
           <CardActions>
             <StyledButton>
-              <img src="/images/GitHub-Mark-32px.png" alt="github icon" />
+              <a href="https://github.com/rooiss/stonks-app">
+                <img src="/images/GitHub-Mark-32px.png" alt="github icon" />
+              </a>
             </StyledButton>
-            <StyledButton>
+            {/* <StyledButton>
               <img
                 src="/images/icons8-external-link-32.png"
                 alt="external link"
               />
-            </StyledButton>
+            </StyledButton> */}
           </CardActions>
         </LeftBox>
       )}
