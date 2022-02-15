@@ -1,3 +1,3 @@
 ## TODO
 
-- [ ] convert all divs into sections
+- [ ] add social
