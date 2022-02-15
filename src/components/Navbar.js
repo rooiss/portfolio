@@ -13,7 +13,7 @@ import pdf from '../documents/Louis_Kim_Resume.pdf'
 const navBarItems = [
   { name: 'Work', url: '/#projects' },
   { name: 'Contact', url: '/#contact' },
-  { name: 'Blog', url: '/#blog' },
+  // { name: 'Blog', url: '/#blog' },
 ]
 
 const StyledContainer = styled(

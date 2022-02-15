@@ -4,6 +4,7 @@ import {
   CardActions,
   CardContent,
   CardMedia,
+  Link,
   Typography,
 } from '@mui/material'
 import { Box, styled } from '@mui/system'
@@ -59,7 +60,12 @@ export const MainProjectCard = () => {
           textAlign="center"
           sx={{ paddingBottom: '8px' }}
         >
-          VolleyballTournaments.xyz
+          <Link
+            href="https://volleyballtournaments.xyz"
+            sx={{ textDecoration: 'none', color: 'black' }}
+          >
+            VolleyballTournaments.xyz
+          </Link>
         </Typography>
         <Typography variant="body2" textAlign="left">
           This app provides a way for users to organize volleyball tournaments

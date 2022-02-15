@@ -1,4 +1,4 @@
-import { Button, Card, CardActions, Typography } from '@mui/material'
+import { Button, Card, CardActions, Link, Typography } from '@mui/material'
 import { Box, styled } from '@mui/system'
 
 const StyledCard = styled(
@@ -67,7 +67,12 @@ export const ProjectCard = ({ name, mirrored }) => {
       {mirrored ? (
         <RightBox>
           <Typography variant="h5" component="div" align="center">
-            {name}
+            <Link
+              href="https://www.notified.gq"
+              sx={{ textDecoration: 'none', color: 'black' }}
+            >
+              {name}
+            </Link>
           </Typography>
           <TextBox>
             <Typography variant="body2" align="right">
