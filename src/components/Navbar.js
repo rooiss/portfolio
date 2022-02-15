@@ -1,5 +1,6 @@
 import {
   Container,
+  Link,
   List,
   ListItem,
   ListItemButton,
@@ -7,6 +8,7 @@ import {
 } from '@mui/material'
 import { styled } from '@mui/system'
 import ScrollIntoView from 'react-scroll-into-view'
+import pdf from '../documents/Louis_Kim_Resume.pdf'
 
 const navBarItems = [
   { name: 'Work', url: '/#projects' },
@@ -57,7 +59,9 @@ export const Navbar = () => {
             padding: '0px 10px',
           }}
         >
-          <Typography variant="body2">Resume</Typography>
+          <Link href={pdf} target="_blank" underline="none" color="black">
+            <Typography variant="body2">Resume</Typography>
+          </Link>
         </ListItemButton>
       </StyledList>
     </StyledContainer>

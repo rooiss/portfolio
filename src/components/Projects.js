@@ -11,7 +11,6 @@ const OuterBox = styled(
   alignItems: 'center',
   flexDirection: 'column',
   margin: '32px 0px',
-  // height: '100vh',
 })
 
 const CardBox = styled(
@@ -23,6 +22,7 @@ const CardBox = styled(
   justifyContent: 'center',
   maxWidth: '100%',
   width: '65%',
+  paddingTop: '32px',
 })
 
 export const Projects = () => {

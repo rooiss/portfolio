@@ -46,7 +46,7 @@ const StyledLine = styled(
 
 export const MainProjectCard = () => {
   return (
-    <StyledCard>
+    <StyledCard elevation={0}>
       <CardMedia
         component="img"
         height="370"
