@@ -68,10 +68,9 @@ export const MainProjectCard = () => {
           </Link>
         </Typography>
         <Typography variant="body2" textAlign="left">
-          This app provides a way for users to organize volleyball tournaments
-          and for users to join those tournaments. Currently working with local
-          volleyball tournament organizations to drive the architectural design
-          of the app, ensuring a user-centric flow.
+          Connecting volleyball players to tournaments and working with local
+          volleyball organizations and players to drive architectural design
+          with user experience as the focal point.
         </Typography>
         <StyledLine />
         <Typography variant="body2" color="text.secondary" textAlign="center">
