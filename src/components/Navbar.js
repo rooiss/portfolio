@@ -8,7 +8,7 @@ import {
 } from '@mui/material'
 import { styled } from '@mui/system'
 import ScrollIntoView from 'react-scroll-into-view'
-import pdf from '../documents/Louis_Kim_Resume.pdf'
+import pdf from '../documents/LouisKimResume.pdf'
 
 const navBarItems = [
   { name: 'Work', url: '/#projects' },
