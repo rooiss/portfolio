@@ -29,7 +29,7 @@ export const Projects = () => {
   return (
     <OuterBox id="Work">
       <Typography variant="h2" fontWeight="bold" sx={{ paddingBottom: '16px' }}>
-        Some things I've built
+        My work
       </Typography>
       <MainProjectCard />
       <CardBox>

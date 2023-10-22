@@ -5,6 +5,7 @@ import { Projects } from './Projects'
 import { Box } from '@mui/material'
 import { styled } from '@mui/system'
 import { Footer } from './Footer'
+import { Experience } from './Experience'
 
 const StyledBox = styled(
   Box,
@@ -21,6 +22,7 @@ export const Main = () => {
     <StyledBox>
       <Navbar />
       <About />
+      <Experience />
       <Projects />
       <Contact />
       <Footer />
