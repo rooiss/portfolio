@@ -24,7 +24,7 @@ const StyledContainer = styled(
   display: 'flex',
   justifyContent: 'center',
   position: 'fixed',
-  backgroundColor: 'gray',
+  backgroundColor: '#34eb7d',
 })
 
 const StyledList = styled(
